@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Management | Personal Expense Tracker</title>
+  <link rel="stylesheet" href="income.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">₹</span><span>MoneyMate</span></div>
+      <p class="nav-label">MENU</p>
+      <nav>
+        <a href="#" class="nav-link">▦ <span>Dashboard</span></a>
+        <a href="#" class="nav-link active">↗ <span>Income</span></a>
+        <a href="#" class="nav-link">↘ <span>Expenses</span></a>
+        <a href="#" class="nav-link">▤ <span>Transactions</span></a>
+        <a href="#" class="nav-link">▥ <span>Reports</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-link">⚙ <span>Settings</span></a>
+        <div class="profile">
+          <div class="avatar">JD</div>
+          <div><strong>John Doe</strong><small>Personal Account</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PERSONAL FINANCE</p>
+          <h1>Income Management</h1>
+          <p class="subtitle">Track, manage and understand the money you earn.</p>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" aria-label="Notifications">♧</button>
+          <div class="avatar">JD</div>
+        </div>
+      </header>
+
+      <section class="summary-grid" aria-label="Income summary">
+        <article class="summary-card total">
+          <div class="card-heading"><span>Total Income</span><span class="card-symbol">₹</span></div>
+          <h2>₹45,000.00</h2>
+          <p class="positive">↑ 8.5% <span>compared to last month</span></p>
+        </article>
+        <article class="summary-card">
+          <div class="card-heading"><span>This Month</span><span class="card-symbol green">▣</span></div>
+          <h2>₹18,500.00</h2>
+          <p class="muted">November 2026</p>
+        </article>
+        <article class="summary-card">
+          <div class="card-heading"><span>Income Sources</span><span class="card-symbol purple">◉</span></div>
+          <h2>4</h2>
+          <p class="muted">Active income categories</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel form-panel">
+          <div class="panel-heading">
+            <div><h2>Add New Income</h2><p>Enter the details of your earnings.</p></div>
+            <span class="heading-icon">＋</span>
+          </div>
+          <form>
+            <div class="field">
+              <label for="income-title">Income title</label>
+              <input id="income-title" type="text" placeholder="e.g. Monthly salary">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="amount">Amount (₹)</label>
+                <input id="amount" type="number" min="0" step="0.01" placeholder="0.00">
+              </div>
+              <div class="field">
+                <label for="source">Income source</label>
+                <select id="source">
+                  <option value="">Select source</option>
+                  <option>Salary</option>
+                  <option>Freelance</option>
+                  <option>Business</option>
+                  <option>Investment</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="date">Date received</label>
+              <input id="date" type="date">
+            </div>
+            <div class="field">
+              <label for="description">Description <span class="optional">(optional)</span></label>
+              <textarea id="description" rows="3" placeholder="Add a note about this income..."></textarea>
+            </div>
+            <button class="primary-button" type="button">＋ Add Income</button>
+            <p class="form-note">Demo layout: connect this form to your group's JavaScript/backend to save records.</p>
+          </form>
+        </article>
+
+        <article class="panel history-panel">
+          <div class="panel-heading history-heading">
+            <div><h2>Income History</h2><p>Your recent income records.</p></div>
+            <a href="#" class="view-all">View all</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>INCOME DETAILS</th><th>DATE</th><th>AMOUNT</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><div class="transaction"><span class="source-icon salary">₹</span><span><strong>Monthly Salary</strong><small>Salary</small></span></div></td>
+                  <td>18 Nov 2026</td><td class="amount">+₹15,000</td><td><button class="more" aria-label="More options">•••</button></td>
+                </tr>
+                <tr>
+                  <td><div class="transaction"><span class="source-icon freelance">✦</span><span><strong>Website Project</strong><small>Freelance</small></span></div></td>
+                  <td>12 Nov 2026</td><td class="amount">+₹2,500</td><td><button class="more" aria-label="More options">•••</button></td>
+                </tr>
+                <tr>
+                  <td><div class="transaction"><span class="source-icon investment">↗</span><span><strong>Bank Interest</strong><small>Investment</small></span></div></td>
+                  <td>05 Nov 2026</td><td class="amount">+₹500</td><td><button class="more" aria-label="More options">•••</button></td>
+                </tr>
+                <tr>
+                  <td><div class="transaction"><span class="source-icon business">▣</span><span><strong>Business Earnings</strong><small>Business</small></span></div></td>
+                  <td>28 Oct 2026</td><td class="amount">+₹7,000</td><td><button class="more" aria-label="More options">•••</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="history-footer"><span>Showing 4 recent records</span><span class="status">● Income received</span></div>
+        </article>
+      </section>
+      <footer>© 2026 MoneyMate · Personal Expense Tracker</footer>
+    </main>
+  </div>
+</body>
+</html>
