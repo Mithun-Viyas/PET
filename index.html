@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Management | Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">₹</span><span>SpendWise</span></div>
+      <p class="nav-label">WORKSPACE</p>
+      <nav>
+        <a href="#" class="nav-item"><span>▦</span> Dashboard</a>
+        <a href="#" class="nav-item"><span>↕</span> Transactions</a>
+        <a href="#" class="nav-item active"><span>◉</span> Budget Management</a>
+        <a href="#" class="nav-item"><span>▥</span> Reports</a>
+        <a href="#" class="nav-item"><span>⚙</span> Settings</a>
+      </nav>
+      <div class="sidebar-note">
+        <div class="note-icon">✦</div>
+        <strong>Small steps add up.</strong>
+        <p>Keep an eye on your spending and make your money work for you.</p>
+      </div>
+      <div class="profile">
+        <div class="avatar">AR</div>
+        <div><strong>Alex R.</strong><small>Personal account</small></div>
+        <span class="dots">•••</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">Workspace <span>/</span> <strong>Budget Management</strong></div>
+        <div class="top-actions"><span class="month-chip">November 2026⌄</span><button class="icon-button" aria-label="Notifications">♧<i></i></button></div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">YOUR MONEY, IN CONTROL</p>
+          <h1>Budget management</h1>
+          <p class="subheading">Plan your spending, track your progress, and stay on top of your goals.</p>
+        </div>
+        <button class="primary-button" type="button">＋ Create budget</button>
+      </section>
+
+      <section class="summary-grid">
+        <article class="summary-card total-card">
+          <div class="card-top"><span>Total monthly budget</span><span class="metric-icon purple">▣</span></div>
+          <div class="metric">₹20,000 <span class="trend neutral">This month</span></div>
+          <div class="metric-foot"><span class="mini-line purple-line">↗</span> Your planned spending limit</div>
+        </article>
+        <article class="summary-card">
+          <div class="card-top"><span>Total spent</span><span class="metric-icon orange">↗</span></div>
+          <div class="metric">₹12,500</div>
+          <div class="progress-track"><div class="progress-fill orange-fill" style="width:62.5%"></div></div>
+          <div class="metric-foot"><span class="orange-text">62.5%</span> of your budget used</div>
+        </article>
+        <article class="summary-card">
+          <div class="card-top"><span>Remaining balance</span><span class="metric-icon green">⌁</span></div>
+          <div class="metric">₹7,500</div>
+          <div class="progress-track"><div class="progress-fill green-fill" style="width:37.5%"></div></div>
+          <div class="metric-foot"><span class="green-text">37.5%</span> still available</div>
+        </article>
+        <article class="summary-card">
+          <div class="card-top"><span>Budget health</span><span class="metric-icon blue">♡</span></div>
+          <div class="metric health-metric">Looking good <span class="health-dot"></span></div>
+          <div class="metric-foot">You’re within your monthly limit</div>
+          <div class="health-decoration"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel budgets-panel">
+          <div class="panel-heading">
+            <div><h2>Category budgets</h2><p>Track each category against its spending limit.</p></div>
+            <button class="text-button" type="button">View all ↗</button>
+          </div>
+          <div class="budget-list">
+            <div class="budget-row">
+              <div class="category-icon food">♨</div>
+              <div class="budget-details"><div class="budget-title"><strong>Food & groceries</strong><span>₹3,500 <small>/ ₹5,000</small></span></div><div class="progress-track"><div class="progress-fill green-fill" style="width:70%"></div></div><div class="budget-foot"><span>70% used</span><span class="green-text">₹1,500 left</span></div></div>
+              <button class="more-button" aria-label="More options for food budget">•••</button>
+            </div>
+            <div class="budget-row">
+              <div class="category-icon travel">↗</div>
+              <div class="budget-details"><div class="budget-title"><strong>Transport</strong><span>₹1,800 <small>/ ₹3,000</small></span></div><div class="progress-track"><div class="progress-fill blue-fill" style="width:60%"></div></div><div class="budget-foot"><span>60% used</span><span class="green-text">₹1,200 left</span></div></div>
+              <button class="more-button" aria-label="More options for transport budget">•••</button>
+            </div>
+            <div class="budget-row">
+              <div class="category-icon shopping">◇</div>
+              <div class="budget-details"><div class="budget-title"><strong>Shopping</strong><span>₹4,200 <small>/ ₹4,000</small></span></div><div class="progress-track"><div class="progress-fill red-fill" style="width:100%"></div></div><div class="budget-foot"><span class="red-text">105% used</span><span class="red-text">₹200 over budget</span></div></div>
+              <button class="more-button" aria-label="More options for shopping budget">•••</button>
+            </div>
+            <div class="budget-row">
+              <div class="category-icon bills">▤</div>
+              <div class="budget-details"><div class="budget-title"><strong>Bills & utilities</strong><span>₹2,000 <small>/ ₹3,000</small></span></div><div class="progress-track"><div class="progress-fill purple-fill" style="width:66.7%"></div></div><div class="budget-foot"><span>66.7% used</span><span class="green-text">₹1,000 left</span></div></div>
+              <button class="more-button" aria-label="More options for bills budget">•••</button>
+            </div>
+            <div class="budget-row">
+              <div class="category-icon fun">✧</div>
+              <div class="budget-details"><div class="budget-title"><strong>Entertainment</strong><span>₹1,000 <small>/ ₹2,000</small></span></div><div class="progress-track"><div class="progress-fill pink-fill" style="width:50%"></div></div><div class="budget-foot"><span>50% used</span><span class="green-text">₹1,000 left</span></div></div>
+              <button class="more-button" aria-label="More options for entertainment budget">•••</button>
+            </div>
+          </div>
+          <div class="panel-footer"><span class="footer-dot"></span> Budget data shown is sample data for the project UI.</div>
+        </article>
+
+        <div class="right-column">
+          <article class="panel spending-panel">
+            <div class="panel-heading"><div><h2>Spending overview</h2><p>Where your money is going</p></div><button class="select-chip" type="button">This month⌄</button></div>
+            <div class="chart-wrap">
+              <div class="donut"><div class="donut-center"><strong>₹12,500</strong><span>Total spent</span></div></div>
+              <div class="legend">
+                <div><i class="legend-dot dot-food"></i><span>Food</span><strong>28%</strong></div>
+                <div><i class="legend-dot dot-shopping"></i><span>Shopping</span><strong>34%</strong></div>
+                <div><i class="legend-dot dot-bills"></i><span>Bills</span><strong>16%</strong></div>
+                <div><i class="legend-dot dot-travel"></i><span>Transport</span><strong>14%</strong></div>
+                <div><i class="legend-dot dot-other"></i><span>Other</span><strong>8%</strong></div>
+              </div>
+            </div>
+          </article>
+          <article class="alert-card">
+            <div class="alert-symbol">!</div>
+            <div><strong>Shopping budget exceeded</strong><p>You’ve spent ₹200 more than your shopping limit. Consider reviewing recent purchases.</p><a href="#">Review spending →</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel tips-panel">
+        <div class="tips-icon">✦</div>
+        <div class="tips-copy"><h2>A little insight for you</h2><p>You’ve used 62.5% of your monthly budget. You’re on track overall, but your shopping category has crossed its limit.</p></div>
+        <div class="tips-stat"><span>Daily average</span><strong>₹625</strong><small>Based on this month’s sample spending</small></div>
+      </section>
+      <footer>SpendWise <span>•</span> Personal Expense Tracker <span class="footer-right">Budget Management Module · Demo UI</span></footer>
+    </main>
+  </div>
+</body>
+</html>
